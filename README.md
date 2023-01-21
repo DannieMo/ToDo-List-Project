@@ -42,6 +42,11 @@ To-do List Project</b></h1>
 
 - This is a To-do List app for adding and removing task from a list
 
+# 🔭 Future Features
+
+> I will be adding the Interactive list feature
+> I will be adding the add and remove feature
+
 ## Learning Objectives
 
 - Flexbox to place elements in the page.
