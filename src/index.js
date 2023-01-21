@@ -6,19 +6,19 @@ const listArray = [
   {
     description: 'Project one is List Structure',
     complete: true,
-    index: 0,
+    index: 8,
   },
   {
     description: 'Project two is Interactive List',
     complete: true,
-    index: 1,
+    index: 9,
   },
   {
     description: 'Project three is Add and Remove',
     complete: false,
     index: 2,
   },
-];
+].sort((a, b) => a.index - b.index);
 
 // =================== Code for next milestone under dev ===============
 
