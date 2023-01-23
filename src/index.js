@@ -1,8 +1,6 @@
 import './style.css';
 
-const tasks = document.querySelector('.task-list');
-
-const listArray = [
+let listArray = [
   {
     description: 'Project one is List Structure',
     complete: true,
@@ -22,11 +20,12 @@ const listArray = [
 
 // =================== Code for next milestone under dev ===============
 
-const handleState = () => {
+let handleState = () => {
   // code for next milestone
 };
 
 // =================== Code for next milestone under dev ===============
+let toDos = document.querySelector('.todo-items');
 
 const displayTasks = (task, container) => {
   if (task.length > 0) {
@@ -52,4 +51,4 @@ const displayTasks = (task, container) => {
   }
 };
 
-displayTasks(listArray, tasks);
+displayTasks(listArray, toDos);
