@@ -29,9 +29,9 @@ const editItem = (e) => {
   const text = e.target.innerText;
   e.target.innerHTML = `<input type="text" value=${text} />`;
   const doneBtn = document.createElement('div');
-  doneBtn.innerHTML = `<div class="done"><i class="fa fa-check" aria-hidden="true"></i></div>`;
+  doneBtn.innerHTML = '<div class="done"><i class="fa fa-check" aria-hidden="true"></i></div>';
   e.target.parentElement.addEventListener(
-    'keydown'
+    'keydown',
     // storeItems(e.target.value) Dangerous line
   );
 };
@@ -80,4 +80,6 @@ displayTasks = (task, container) => {
 };
 
 export default listArray;
-export { addItem, removeItem, editItem, displayTasks };
+export {
+  addItem, removeItem, editItem, displayTasks,
+};
