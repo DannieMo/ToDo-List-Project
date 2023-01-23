@@ -4,7 +4,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
@@ -12,12 +12,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background:
-    radial-gradient(
-      circle,
-      rgba(87, 101, 101, 0.306) 14%,
-      rgba(38, 34, 42, 0.889) 86%
-    );
+  background: radial-gradient(
+    circle,
+    rgba(83, 189, 189, 0.306) 14%,
+    rgba(113, 108, 118, 0.889) 86%
+  );
 }
 
 li {
@@ -26,35 +25,25 @@ li {
 
 h1 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .container {
-  background-color: white;
+  background-color: grey;
 }
 
-.icon__size {
+.icon-size {
   font-size: 2rem;
-}
-
-.arrange-items {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
 }
 
 .list__input {
   font-size: 1.8rem;
 }
 
-.add-task {
-  background-color: white;
-}
-
-.add-task__input {
-  border: none;
-  font-size: 1.8rem;
-  font-style: italic;
+.display-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
 .input {
@@ -64,9 +53,18 @@ h1 {
   gap: 1.5rem;
 }
 
-.clear-all {
+.add-task {
+  background-color: white;
+}
+
+.add-task-input {
+  border: none;
+  font-style: italic;
+}
+
+.clear-all-completed {
   background-color: rgb(220, 217, 217);
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
   border: none;
   padding: 1.3rem;
