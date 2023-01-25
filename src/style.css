@@ -44,13 +44,6 @@ h1 {
   padding: 1rem 2rem;
 }
 
-.input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-}
-
 .add-task {
   border: none;
   font-style: italic;

@@ -21,5 +21,4 @@ item.addEventListener('keypress', (e) => {
   }
 });
 
-
 displayTasks(listArray, container);
