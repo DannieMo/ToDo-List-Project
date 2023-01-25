@@ -5,15 +5,6 @@ const container = document.querySelector('.task-list');
 const addBtn = document.querySelector('.add_user_input');
 const item = document.getElementById('user_input');
 
-// =================== Code for next milestone under dev ===============
-
-const handleState = () => {
-  // code for next milestone
-};
-
-// =================== Code for next milestone under dev ===============
-
-// addBtn.addEventListener('click', () => addItem(item, listArray));
 addBtn.addEventListener('click', () => {
   addItem(item.value, listArray);
   displayTasks(listArray, container);
