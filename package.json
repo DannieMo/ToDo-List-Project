@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/DannieMo/To-do-list-project/issues"
   },
-  "homepage": "https://github.com/DannieMo/To-do-list-project#readme",
+  "homepage": "https://github.com/DannieMo/To-do-list-project/dist",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
