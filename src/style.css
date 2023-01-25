@@ -58,12 +58,12 @@ h1 {
   background-color: white;
 }
 
-.add-task-input {
+.add-tasks {
   border: none;
   font-style: italic;
 }
 
-.clear-all-completed {
+.clear-completed-tasks {
   background-color: rgb(220, 217, 217);
   font-size: 1.5rem;
   width: 100%;
