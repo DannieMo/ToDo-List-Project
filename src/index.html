@@ -12,24 +12,25 @@
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
-    <section class="main-container">
-      <header class="display-items">
-        <h1>Today's To-Do</h1>
-        <i class="fa-sharp fa-solid fa-arrows-rotate icon-size"></i>
+    <section class="container">
+      <header class="arrange-items">
+        <h1>Today's ToDo</h1>
+        <i class="fa-sharp fa-solid fa-arrows-rotate icon__size"></i>
       </header>
       <hr />
-      <div class="add-task display-items">
+      <div class="add-task arrange-items">
         <input
-          class="add-tasks"
+          id="user_input"
+          class="add-task"
           type="text"
-          placeholder="Add to your list..."
+          placeholder="Add your task here..."
         />
-        <i class="fa-solid fa-plus icon-size"></i>
+        <i class="fa-solid fa-plus icon__size add_user_input"></i>
       </div>
       <hr />
-      <div class="todo-items"></div>
-      <div class="clear-items">
-        <button class="clear-completed-tasks">Clear completed tasks</button>
+      <div class="task-list"></div>
+      <div class="clear-task">
+        <button class="clear-all" type="button">Clear all completed</button>
       </div>
     </section>
   </body>

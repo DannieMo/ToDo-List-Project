@@ -13,12 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background:
-    radial-gradient(
-      circle,
-      rgba(83, 189, 189, 0.306) 14%,
-      rgba(113, 108, 118, 0.889) 86%
-    );
+  background: rgb(232, 223, 229);
 }
 
 li {
@@ -26,8 +21,9 @@ li {
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .main-container {
@@ -56,17 +52,21 @@ h1 {
 }
 
 .add-task {
+  border: none;
+  font-style: italic;
   background-color: white;
 }
 
-.add-tasks {
-  border: none;
-  font-style: italic;
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.clear-completed-tasks {
-  background-color: rgb(220, 217, 217);
-  font-size: 1.5rem;
+.clear-all {
+  background-color: rgb(178, 145, 145);
+  font-size: 2rem;
   width: 100%;
   border: none;
   padding: 1.3rem;
