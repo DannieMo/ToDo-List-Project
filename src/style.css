@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -24,8 +25,9 @@ li {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 18px;
   font-weight: 500;
+  text-align: center;
 }
 
 .container {
@@ -52,7 +54,6 @@ h1 {
 
 .add-task__input {
   border: none;
-  font-size: 1.8rem;
   font-style: italic;
 }
 
@@ -64,7 +65,7 @@ h1 {
 }
 
 .clear-all {
-  background-color: rgb(220, 217, 217);
+  background-color: rgb(178, 145, 145);
   font-size: 2rem;
   width: 100%;
   border: none;
