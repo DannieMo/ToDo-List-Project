@@ -14,21 +14,23 @@
   <body>
     <section class="container">
       <header class="arrange-items">
-        <h1>Today's To Do List Item</h1>
+        <h1>Today's ToDo</h1>
         <i class="fa-sharp fa-solid fa-arrows-rotate icon__size"></i>
       </header>
       <hr />
-      <article class="add-task arrange-items">
+      <div class="add-task arrange-items">
         <input
-          class="add-task__input"
+          id="user_input"
+          class="add-task"
           type="text"
-          placeholder="Add your task here"
+          placeholder="Add your task here..."
         />
-        <i class="fa-solid fa-plus icon__size"></i>
-      </article>
+        <i class="fa-solid fa-plus icon__size add_user_input"></i>
+      </div>
       <hr />
+      <div class="task-list"></div>
       <div class="clear-task">
-        <button class="clear-all">Clear all completed</button>
+        <button class="clear-all" type="button">Clear all completed</button>
       </div>
     </section>
   </body>
