@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 const updateIndex = (list) => {
   if (list.length > 0) {
     const newList = list.map((el, id) => {
@@ -6,6 +7,7 @@ const updateIndex = (list) => {
     });
     return newList;
   }
+  return list;
 };
 
 /* ======== Stores a list to localstorage ============= */
@@ -41,7 +43,7 @@ const editMyBox = (e, list, index, status) => {
   if (e.key === 'Enter') {
     const copyList = list.filter((el) => el.index !== index);
     const currItem = {
-      index: index,
+      index,
       description: e.target.value,
       completed: status,
     };
@@ -57,12 +59,8 @@ const editItem = (e, list, id, status) => {
   const text = e.target.innerText;
   e.target.innerHTML = `<input type="text" class="edited-text" value=${text} />`;
   const editBoxes = document.querySelectorAll('.edited-text');
-  editBoxes.forEach((box) =>
-    box.addEventListener('keypress', (f) => editMyBox(f, list, id, status))
-  );
+  editBoxes.forEach((box) => box.addEventListener('keypress', (f) => editMyBox(f, list, id, status)));
 };
-
-let displayTasks;
 
 /* ======== Removes an item from the DOM ============= */
 const removeItem = (id) => {
@@ -84,7 +82,7 @@ const handleState = () => {
 // =================== Code for next milestone under dev ===============
 
 /* ======== Renders DOM ============= */
-displayTasks = (task, container) => {
+const displayTasks = (task, container) => {
   container.innerText = '';
   if (task.length > 0) {
     const ul = document.createElement('ul');
@@ -99,7 +97,6 @@ displayTasks = (task, container) => {
         checkbox.id = `id${el.index}`;
         checkbox.addEventListener('click', (e) => {
           handleState(e);
-          displayTasks(listArray, container);
         });
         const trash = document.createElement('span');
         trash.innerHTML = `<i id=${el.index} class="fa-sharp fa-solid fa-trash"></i>`;
@@ -111,9 +108,7 @@ displayTasks = (task, container) => {
         const { description } = el;
         descBox.setAttribute('class', 'list__input');
         descBox.innerText = description;
-        descBox.addEventListener('click', (e) =>
-          editItem(e, listArray, el.index, el.completed)
-        );
+        descBox.addEventListener('click', (e) => editItem(e, listArray, el.index, el.completed));
         li.append(checkbox, descBox, trash);
         ul.appendChild(li);
       });
@@ -122,4 +117,6 @@ displayTasks = (task, container) => {
 };
 
 export default listArray;
-export { addItem, removeItem, editItem, displayTasks };
+export {
+  addItem, removeItem, editItem, displayTasks,
+};
