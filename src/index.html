@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>To Do List App</title>
+    <script
+      src="https://kit.fontawesome.com/deef7307a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <header class="arrange-items">
+        <h1>Today's ToDo</h1>
+        <i class="fa-sharp fa-solid fa-arrows-rotate icon__size"></i>
+      </header>
+      <hr />
+      <div class="add-task arrange-items">
+        <input
+          id="user_input"
+          class="add-task"
+          type="text"
+          placeholder="Add your task here..."
+        />
+        <i class="fa-solid fa-plus icon__size add_user_input"></i>
+      </div>
+      <hr />
+      <div class="task-list"></div>
+      <div class="clear-task">
+        <button class="clear-all" type="button">Clear all completed</button>
+      </div>
+    </section>
+  </body>
 </html>
