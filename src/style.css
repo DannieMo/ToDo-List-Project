@@ -5,11 +5,12 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 70%;
 }
 
 body {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -30,18 +31,18 @@ h1 {
   background-color: white;
 }
 
-.icon__size {
-  font-size: 2rem;
+.icon-size {
+  font-size: 12px;
 }
 
 .arrange-items {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
 }
 
-.list__input {
-  font-size: 1.8rem;
+.list-input {
+  font-size: 15px;
 }
 
 .add-task {
@@ -54,17 +55,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 10px;
 }
 
-.clear-all {
-  background-color: rgb(178, 145, 145);
-  font-size: 2rem;
+.input-items {
+  gap: 30px;
+}
+
+.clear-completed-tasks {
+  background-color: rgb(126, 70, 70);
+  font-size: 15px;
+  font-weight: 600;
   width: 100%;
   border: none;
-  padding: 1.3rem;
-}
-
-.list-items {
-  gap: 6rem;
+  padding: 12px;
 }
