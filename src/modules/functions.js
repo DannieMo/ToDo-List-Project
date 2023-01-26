@@ -92,7 +92,7 @@ const displayTasks = (task, container) => {
       // .sort((a, b) => a.index - b.index)
       .forEach((el) => {
         const li = document.createElement('li');
-        li.setAttribute('class', 'list-items arrange-items');
+        li.setAttribute('class', 'input-items arrange-items');
         const checkbox = document.createElement('input');
         checkbox.setAttribute('class', 'list-item');
         checkbox.type = 'checkbox';
@@ -108,7 +108,7 @@ const displayTasks = (task, container) => {
         });
         const descBox = document.createElement('div');
         const { description } = el;
-        descBox.setAttribute('class', 'list__input');
+        descBox.setAttribute('class', 'list-input');
         descBox.innerText = description;
         descBox.addEventListener('click', (e) =>
           editItem(e, listArray, el.index, el.completed)
