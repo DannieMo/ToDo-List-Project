@@ -1,4 +1,5 @@
 /* ======== Stores a list to localstorage ============= */
+// eslint-disable-next-line consistent-return
 const updateIndex = (list) => {
   if (list.length > 0) {
     const newList = list.map((el, id) => {
