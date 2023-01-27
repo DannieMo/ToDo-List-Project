@@ -74,7 +74,9 @@ To-do List Project</b></h1>
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://github.com/DannieMo/To-do-list-project.git)
+- [Live Demo Link](https://dannie-todolist.netlify.app/)
+
+- [Live Demo Link](https://danniemo.github.io/ToDo-List-Project/dist/)
 
 ### Prerequisites
 
