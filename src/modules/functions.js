@@ -60,7 +60,7 @@ const displayTasks = (task, container) => {
     const ul = document.createElement('ul');
     task.forEach((el) => {
       const li = document.createElement('li');
-      li.setAttribute('class', 'list-items arrange-items');
+      li.setAttribute('class', 'input-items arrange-items');
       const checkbox = document.createElement('input');
       checkbox.setAttribute('class', 'list-item');
       checkbox.type = 'checkbox';
