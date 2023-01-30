@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -14,7 +13,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(232, 223, 229);
+  background:
+    radial-gradient(
+      circle,
+      rgba(87, 101, 101, 0.306) 14%,
+      rgba(38, 34, 42, 0.889) 86%
+    );
 }
 
 li {
@@ -22,9 +26,8 @@ li {
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: 500;
-  text-align: center;
 }
 
 .container {
@@ -46,9 +49,13 @@ h1 {
 }
 
 .add-task {
-  border: none;
-  font-style: italic;
   background-color: white;
+}
+
+.add-task__input {
+  border: none;
+  font-size: 1.8rem;
+  font-style: italic;
 }
 
 .input {
@@ -59,14 +66,18 @@ h1 {
 }
 
 .input-items {
-  gap: 30px;
+  gap: 6rem;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .clear-completed-tasks {
-  background-color: rgb(126, 70, 70);
-  font-size: 15px;
-  font-weight: 600;
+  background-color: rgb(220, 217, 217);
+  font-size: 2rem;
   width: 100%;
   border: none;
-  padding: 12px;
+  padding: 1rem;
 }
+
