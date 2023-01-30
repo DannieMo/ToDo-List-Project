@@ -3,7 +3,7 @@ import listArray, { addItem, displayTasks } from './modules/functions';
 import './style.css';
 
 const container = document.querySelector('.task-list');
-const addBtn = document.querySelector('.add_user_input');
+const addBtn = document.querySelector('.user-input');
 const item = document.getElementById('user_input');
 const clearAll = document.querySelector('.clear-all');
 
