@@ -59,11 +59,11 @@ h1 {
 }
 
 .clear-all {
-  background-color: rgb(220, 217, 217);
+  background-color: rgb(196, 130, 130);
   font-size: 2rem;
   width: 100%;
   border: none;
-  padding: 1.3rem;
+  padding: 1rem;
 }
 
 .list-items {
