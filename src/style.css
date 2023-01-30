@@ -58,7 +58,7 @@ h1 {
   cursor: pointer;
 }
 
-.clear-all {
+.clear-completed-tasks {
   background-color: rgb(196, 130, 130);
   font-size: 2rem;
   width: 100%;

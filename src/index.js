@@ -5,7 +5,7 @@ import './style.css';
 const container = document.querySelector('.task-list');
 const addBtn = document.querySelector('.adduser-input');
 const item = document.getElementById('user-input');
-const clearAll = document.querySelector('.clear-all');
+const clearAll = document.querySelector('.clear-completed-tasks');
 
 addBtn.addEventListener('click', () => {
   addItem(item.value, listArray);
