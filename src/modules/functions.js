@@ -77,7 +77,7 @@ const displayTasks = (task, container) => {
       });
       const descBox = document.createElement('div');
       const { description } = el;
-      descBox.setAttribute('class', 'list__input');
+      descBox.setAttribute('class', 'list-input');
       descBox.innerText = description;
       descBox.addEventListener('click', (e) =>
         editItem(e, listArray, el.index, el.completed)

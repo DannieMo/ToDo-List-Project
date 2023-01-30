@@ -9,14 +9,11 @@ html {
 
 body {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: radial-gradient(
-    circle,
-    rgba(104, 167, 167, 0.306) 14%,
-    rgba(38, 34, 42, 0.889) 86%
-  );
+  background: rgb(232, 223, 229);
 }
 
 li {
@@ -32,8 +29,8 @@ h1 {
   background-color: white;
 }
 
-.icon__size {
-  font-size: 2rem;
+.icon-size {
+  font-size: 1.4rem;
 }
 
 .arrange-items {
@@ -42,18 +39,12 @@ h1 {
   padding: 1rem 2rem;
 }
 
-.list__input {
+.list-input {
   font-size: 1.8rem;
 }
 
 .add-task {
   background-color: white;
-}
-
-.add-task__input {
-  border: none;
-  font-size: 1.8rem;
-  font-style: italic;
 }
 
 .input {
